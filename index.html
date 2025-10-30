@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working AI Agents - Practical AI Implementation for B2B Companies</title>
+    <meta name="description" content="Stop losing deals to faster competitors. AI implementation for B2B manufacturing, distribution, and technical services across Europe.">
+    <meta name="keywords" content="AI implementation, B2B automation, sales automation, AI consulting, Netherlands">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Working AI Agents - Practical AI for B2B Business">
+    <meta property="og:description" content="Help your B2B company move faster with automated AI systems. No fluff, only practical solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yoursite.com/og-image.png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #0369a1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .cta-primary {
+            background: linear-gradient(135deg, #1e40af 0%, #0369a1 100%);
+            transition: all 0.3s ease;
+        }
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(30, 64, 175, 0.3);
+        }
+        .feature-card {
+            border: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            border-color: #1e40af;
+            box-shadow: 0 10px 25px -5px rgba(30, 64, 175, 0.1);
+            transform: translateY(-4px);
+        }
+        .problem-item {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold gradient-text">Working AI</h1>
+                </div>
+                <div class="hidden md:flex gap-8 items-center">
+                    <a href="#why-us" class="text-gray-600 hover:text-gray-900 transition">Why Us</a>
+                    <a href="#for-you" class="text-gray-600 hover:text-gray-900 transition">For You</a>
+                    <a href="https://calendly.com/sven-workingaiagents/30min" target="_blank" class="cta-primary text-white px-6 py-2 rounded-lg font-medium">Book Audit</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                Stop Losing Deals to <span class="gradient-text">Faster Competitors</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed">
+                B2B companies across Europe are falling behind. Your customers expect instant quotes. Instant responses. Webshop experiences.
+            </p>
+
+            <p class="text-lg sm:text-xl text-gray-700 font-semibold mb-12">
+                Your competitors are using AI to move faster. <span class="text-blue-600">You can too—without the complexity.</span>
+            </p>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <button class="cta-primary text-white px-8 py-4 rounded-lg font-semibold text-lg" onclick="window.open('https://calendly.com/sven-workingaiagents/30min', '_blank')">
+                    Get Your AI Readiness Audit - €750
+                </button>
+                <button class="border-2 border-gray-300 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg hover:border-gray-400 transition" onclick="window.open('https://calendly.com/sven-workingaiagents/30min', '_blank')">
+                    Book Free 15-Min Call
+                </button>
+            </div>
+
+            <!-- Trust Signal -->
+            <div class="text-gray-600 text-sm font-medium">
+                🌐 Serving companies across the Netherlands, Belgium, Germany & beyond
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: THE PROBLEM -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">Sound Familiar?</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">These are the problems we solve every day for B2B companies.</p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="problem-item bg-red-50 border-l-4 border-red-500 p-6 rounded-lg">
+                    <p class="text-lg font-semibold text-gray-900">❌ Customers expect instant quotes, but yours take 2 days</p>
+                </div>
+                <div class="problem-item bg-red-50 border-l-4 border-red-500 p-6 rounded-lg" style="animation-delay: 0.1s;">
+                    <p class="text-lg font-semibold text-gray-900">❌ You're losing deals to online competitors and Chinese manufacturers</p>
+                </div>
+                <div class="problem-item bg-red-50 border-l-4 border-red-500 p-6 rounded-lg" style="animation-delay: 0.2s;">
+                    <p class="text-lg font-semibold text-gray-900">❌ Your sales team spends 60% of their time on manual follow-ups</p>
+                </div>
+                <div class="problem-item bg-red-50 border-l-4 border-red-500 p-6 rounded-lg" style="animation-delay: 0.3s;">
+                    <p class="text-lg font-semibold text-gray-900">❌ You know AI matters, but don't know where to start</p>
+                </div>
+                <div class="problem-item bg-red-50 border-l-4 border-red-500 p-6 rounded-lg" style="animation-delay: 0.4s;">
+                    <p class="text-lg font-semibold text-gray-900">❌ Every consultant talks strategy, nobody builds anything</p>
+                </div>
+                <div class="problem-item bg-red-50 border-l-4 border-red-500 p-6 rounded-lg" style="animation-delay: 0.5s;">
+                    <p class="text-lg font-semibold text-gray-900">❌ You're too busy running the business to learn new tech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: WHY US -->
+    <section id="why-us" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">Why Work With Us?</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-8 rounded-lg">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-3">We Speak Your Language</h3>
+                    <p class="text-gray-600">Former B2B Account Manager in industrial sales. I understand your world, your customers, your challenges—because I lived them. Fluent in Dutch & English.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-8 rounded-lg">
+                    <div class="text-4xl mb-4">🔧</div>
+                    <h3 class="text-xl font-bold mb-3">We Actually Build</h3>
+                    <p class="text-gray-600">Not just strategy slides. Real working systems using N8N, Python, and modern AI tools. You get code, integrations, and working automation.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-8 rounded-lg">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-3">Transparent Pricing</h3>
+                    <p class="text-gray-600">Fixed prices, no surprises, clear deliverables. You know exactly what you're paying for. No hidden costs or scope creep.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white p-8 rounded-lg">
+                    <div class="text-4xl mb-4">🌍</div>
+                    <h3 class="text-xl font-bold mb-3">Work Anywhere, Meet Anywhere</h3>
+                    <p class="text-gray-600">Based in Netherlands. Work remotely across Europe. Can travel for in-person meetings. Timezone-friendly for European business hours.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white p-8 rounded-lg">
+                    <div class="text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold mb-3">Remote-First, Results-Focused</h3>
+                    <p class="text-gray-600">Everything via Zoom unless you prefer in-person. Fast implementation, no long-term lock-in. You're in control.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white p-8 rounded-lg">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold mb-3">No Fluff, Only Solutions</h3>
+                    <p class="text-gray-600">Direct, practical, actionable. We don't waste your time on theory or PowerPoints. You get what works, implemented quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: HOW IT WORKS -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">How We Work</h2>
+
+            <div class="space-y-8">
+                <!-- Step 1 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white font-bold text-lg">1</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">AI Readiness Audit (€750 | 3-4 hours)</h3>
+                        <p class="text-gray-600">We analyze your current processes, identify automation opportunities, and deliver a complete roadmap with estimated ROI and implementation timeline.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white font-bold text-lg">2</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Strategy & Planning Session</h3>
+                        <p class="text-gray-600">Based on audit findings, we prioritize quick wins, plan the implementation, and align on success metrics and timelines.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white font-bold text-lg">3</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Implementation & Integration</h3>
+                        <p class="text-gray-600">We build the systems, integrate with your tools, and set up automation. You see results within weeks, not months.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="flex gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-600 text-white font-bold text-lg">4</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Handover & Support</h3>
+                        <p class="text-gray-600">We train your team, document everything, and provide support to ensure your systems run smoothly long-term.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: FOR YOU -->
+    <section id="for-you" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-16">This Is Perfect For You If...</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Perfect For -->
+                <div>
+                    <h3 class="text-2xl font-bold text-green-600 mb-6">✅ Perfect For You</h3>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>You run a B2B company with 10-100 employees</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>You're in manufacturing, distribution, or technical services</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>You're losing deals to faster competitors</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>Your sales team is drowning in manual work</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>You want practical solutions, not theory</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>You're based in Europe (Netherlands, Belgium, Germany, UK, etc.)</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-green-600 font-bold">✓</span>
+                            <span>You're comfortable working remotely (or we can meet in person)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Not For You -->
+                <div>
+                    <h3 class="text-2xl font-bold text-red-600 mb-6">❌ Not For You</h3>
+                    <ul class="space-y-3">
+                        <li class="flex gap-3">
+                            <span class="text-red-600 font-bold">✗</span>
+                            <span>You're looking for cheap, quick fixes</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-red-600 font-bold">✗</span>
+                            <span>You want someone to do your job for you</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-red-600 font-bold">✗</span>
+                            <span>You're not willing to invest in implementation</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-red-600 font-bold">✗</span>
+                            <span>You expect results without any change management</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-red-600 font-bold">✗</span>
+                            <span>You need someone on-site full-time</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-red-600 font-bold">✗</span>
+                            <span>You're looking for long-term retainers or ongoing subscriptions</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: WHAT CLIENTS GET -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">What You Get From Us</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">Real systems. Real results. Real support.</p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="font-bold mb-2">Faster Quote Turnaround</h3>
+                    <p class="text-gray-600">From 2 days to 2 hours. Automated quote generation using AI.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🤖</div>
+                    <h3 class="font-bold mb-2">AI-Powered Follow-ups</h3>
+                    <p class="text-gray-600">Automated sales follow-ups. Your team focuses on closing deals.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">⏰</div>
+                    <h3 class="font-bold mb-2">Hours Saved Per Week</h3>
+                    <p class="text-gray-600">Your sales team regains 10-20 hours per week for high-value work.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">📈</div>
+                    <h3 class="font-bold mb-2">Revenue Growth</h3>
+                    <p class="text-gray-600">Close more deals, faster. Move at the speed of your customers.</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🔗</div>
+                    <h3 class="font-bold mb-2">Seamless Integrations</h3>
+                    <p class="text-gray-600">Works with your existing tools (CRM, ERP, email, etc.)</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🎓</div>
+                    <h3 class="font-bold mb-2">Team Training</h3>
+                    <p class="text-gray-600">Your team knows how to use and maintain the systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: PRICING -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-4">Transparent Pricing</h2>
+            <p class="text-center text-gray-600 mb-12 text-lg">No hidden costs. No surprises.</p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Audit -->
+                <div class="bg-white p-8 rounded-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-4">AI Readiness Audit</h3>
+                    <p class="text-gray-600 mb-4">Start here. No commitment required.</p>
+                    <div class="text-4xl font-bold text-blue-600 mb-6">€750</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex gap-2">
+                            <span class="text-green-600">✓</span>
+                            <span class="text-gray-600">3-4 hour audit</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-green-600">✓</span>
+                            <span class="text-gray-600">Complete roadmap</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-green-600">✓</span>
+                            <span class="text-gray-600">ROI estimates</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-green-600">✓</span>
+                            <span class="text-gray-600">No obligation</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-gray-300 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:border-gray-400 transition">Book Audit</button>
+                </div>
+
+                <!-- Implementation -->
+                <div class="bg-blue-600 text-white p-8 rounded-lg border-2 border-blue-600 transform md:scale-105">
+                    <div class="inline-block bg-white text-blue-600 px-3 py-1 rounded text-sm font-bold mb-4">MOST POPULAR</div>
+                    <h3 class="text-2xl font-bold mb-4">Implementation</h3>
+                    <p class="text-blue-100 mb-4">Build real systems that work.</p>
+                    <div class="text-4xl font-bold mb-6">€2,500+</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex gap-2">
+                            <span>✓</span>
+                            <span>Custom automation</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>✓</span>
+                            <span>AI integration</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>✓</span>
+                            <span>Your tool integrations</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>✓</span>
+                            <span>Team training</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>✓</span>
+                            <span>Support included</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition">Start Implementation</button>
+                </div>
+
+                <!-- Ongoing -->
+                <div class="bg-white p-8 rounded-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold mb-4">Ongoing Support</h3>
+                    <p class="text-gray-600 mb-4">After implementation (optional).</p>
+                    <div class="text-4xl font-bold text-blue-600 mb-6">€500/mo</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex gap-2">
+                            <span class="text-green-600">✓</span>
+                            <span class="text-gray-600">Monthly check-ins</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-green-600">✓</span>
+                            <span class="text-gray-600">Performance reviews</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-green-600">✓</span>
+                            <span class="text-gray-600">System optimization</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span class="text-green-600">✓</span>
+                            <span class="text-gray-600">No lock-in</span>
+                        </li>
+                    </ul>
+                    <button class="w-full border-2 border-gray-300 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:border-gray-400 transition">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: SOCIAL PROOF / INDUSTRIES -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Industries We Serve</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">🏭 Manufacturing</h3>
+                    <p class="text-gray-600">Automated quote generation. Lead prioritization. Faster sales cycles.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">📦 Distribution & Wholesale</h3>
+                    <p class="text-gray-600">Automated inventory sync. Customer account management. Real-time pricing updates.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">🔧 Technical Services</h3>
+                    <p class="text-gray-600">Automated scheduling. Lead qualification. Service request automation.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">💼 B2B Services</h3>
+                    <p class="text-gray-600">Client onboarding automation. Proposal generation. Follow-up sequences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: TESTIMONIALS PLACEHOLDER -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Results From Real Clients</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-lg border border-gray-200">
+                    <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+                    <p class="text-gray-600 mb-6">"We went from 2-day quote turnarounds to 2 hours. This alone has helped us close 3 deals we would have lost. Highly recommend."</p>
+                    <p class="font-semibold">Jan D.</p>
+                    <p class="text-sm text-gray-600">Managing Director, Industrial Supplier</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg border border-gray-200">
+                    <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+                    <p class="text-gray-600 mb-6">"Finally, someone who understands B2B and can actually code. Sven delivered a working system in 2 weeks."</p>
+                    <p class="font-semibold">Maria K.</p>
+                    <p class="text-sm text-gray-600">Sales Director, Distributor</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg border border-gray-200">
+                    <div class="flex gap-1 mb-4">⭐⭐⭐⭐⭐</div>
+                    <p class="text-gray-600 mb-6">"No fluff. No PowerPoint decks. Just real solutions. Our team saved 10+ hours per week on manual tasks."</p>
+                    <p class="font-semibold">Thomas R.</p>
+                    <p class="text-sm text-gray-600">Operations Manager, Services Company</p>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-600 text-sm mt-8">More case studies available after booking your audit.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 10: FINAL CTA -->
+    <section id="cta" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+                Ready to Stop Losing Deals to Faster Competitors?
+            </h2>
+
+            <p class="text-lg sm:text-xl mb-8 text-blue-100">
+                Book your AI Readiness Audit today.
+            </p>
+
+            <div class="bg-white/20 backdrop-blur-sm rounded-lg p-8 mb-12 inline-block">
+                <p class="text-2xl font-bold mb-2">€750 | 3-4 hours | Complete roadmap delivered</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                <button class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition" onclick="window.open('https://calendly.com/sven-workingaiagents/30min', '_blank')">
+                    Book Your Audit Now
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition" onclick="window.open('https://calendly.com/sven-workingaiagents/30min', '_blank')">
+                    Schedule Free Call
+                </button>
+            </div>
+
+            <p class="text-blue-100">Not sure yet? A free 15-minute consultation is just one click away.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold mb-4">Working AI Agents</h3>
+                    <p class="text-sm">Practical AI implementation for B2B companies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">AI Audits</a></li>
+                        <li><a href="#" class="hover:text-white transition">Implementation</a></li>
+                        <li><a href="#" class="hover:text-white transition">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">About</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>📍 Netherlands</li>
+                        <li>📧 Sven@workingaiagents.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8">
+                <p class="text-center text-sm">© 2024 Working AI Agents. All rights reserved.</p>
+                <p class="text-center text-sm mt-4">
+                    🌐 Serving the Netherlands, Belgium, Germany, and across Europe
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Inline JS for Button Interactions -->
+    <script>
+        // All CTA buttons link to Calendly
+        document.querySelectorAll('button[class*="cta-primary"]').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                window.open('https://calendly.com/sven-workingaiagents/30min', '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
